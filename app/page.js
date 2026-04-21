@@ -10,7 +10,7 @@ export default function Home() {
   const generate = async () => {
     setLoading(true);
 
-    const res = await fetch("https://API-KAMU/webhook/ebook-generator", {
+    const res = await fetch("https://eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZGQwZWM5ZC0yOGMwLTRiNzEtYjg5OS1lYjE0MTg1YzAzNTkiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwianRpIjoiMmFhYTUxOTQtMzc4MC00MDg1LTk3MGQtZWQyNDVjODNiY2FjIiwiaWF0IjoxNzc2NzcwNTE1fQ.vKWWjR1VcFB2bcD_-A3lG7PJ7SfC5E-PCJ5i-osC8-0/webhook/ebook-generator", {
       method: "POST",
       body: JSON.stringify({ judul }),
     });
